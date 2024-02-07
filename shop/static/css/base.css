@@ -27,6 +27,7 @@ a:hover {
 
 a.button,
 input[type="submit"] {
+  cursor: pointer;
   color: #fff;
   background: #5993bb;
   border-radius: 4px;
