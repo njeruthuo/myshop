@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +119,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # EMAIL CONFIGURATION
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# STRIPE PAYMENT GATEWAY CONFIGURATION
+STRIPE_SECRET_KEY = 'sk_test_51OhRxfEVL0nHRbQHYpDlo4lFxppAIm9oyUnBJOEZaN7nuWR8j79wBmcqmPrcY0de4rTs11l5zjOuEL6BdoMW5I9C00oCGxqu7D'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51OhRxfEVL0nHRbQHrH8wg2TX1BQXJW75prdHSi2Xs2adqtMMLDBjycYTS573KgBpcxLzqdsHfAbSaev6FFOxpA1H00teeTruGp'
+STRIPE_API_VERSION = '2022-08-01'
